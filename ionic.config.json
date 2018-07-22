@@ -5,4 +5,10 @@
   "integrations": {
     "cordova": {}
   }
+  "proxies": [
+    {
+      "path": "/connpass/api",
+      "proxyUrl": "https://connpass.com/api/v1/event"
+    }
+  ]
 }
