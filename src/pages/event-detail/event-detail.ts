@@ -15,11 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EventDetailPage {
 
+  event: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  // 画面初期時に呼ばれるメソッド
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventDetailPage');
+    this.event = this.navParams.data.event;
   }
 
 }

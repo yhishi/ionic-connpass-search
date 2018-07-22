@@ -55,4 +55,11 @@ export class SearchPage {
     })
   }
 
+  // イベント詳細画面を開く
+  openDetail(event) {
+    this.navCtrl.push('EventDetailPage', {
+      event: event
+    });
+  }
+
 }
